@@ -1,0 +1,20 @@
+site:
+  robots: allow
+  start_page: online-guides::start.adoc
+  title: QENTA Online Guides
+  url: https://guides.qenta.com
+content:
+  edit_url: ~
+  sources:
+  - url: ./
+    branches: HEAD
+    start_paths:
+    - content/*
+runtime:
+  cache_dir: ./build/cache
+ui:
+  bundle:
+    url: ./build/ui-bundle.zip
+  supplemental_files: ./ui-customizations/supplemental_ui
+urls:
+  html_extension_style: indexify

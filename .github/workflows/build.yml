@@ -1,0 +1,48 @@
+name: Build
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.BOT_PAT }}
+          submodules: recursive
+      - name: Checkout Submodules
+        id: checkout-submodules
+        run: |
+          pwd
+          ls -al
+          git submodule sync && git submodule update --init --recursive
+          ls -al
+      - name: Get Branch Name
+        shell: bash
+        run: echo "::set-output name=name::$(bash scripts/branchname.sh)"
+        id: branch
+      - name: Build UI
+        id: ui-build
+        run: make ui.build
+      - name: Build Antora
+        id: antora-build
+        run: |
+          pwd
+          ls -al
+          make antora.build
+      # - name: Deploy to Github Pages
+      #   id: deploy-gh
+      #   if: success() && steps.branch.outputs.name == 'master'
+      #   uses: crazy-max/ghaction-github-pages@v2
+      #   with:
+      #     target_branch: gh-pages
+      #     build_dir: build/site
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate Site Package
+        uses: actions/upload-artifact@v1
+        with:
+          name: Site
+          path: build/site/
