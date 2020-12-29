@@ -12,13 +12,6 @@ jobs:
         with:
           token: ${{ secrets.BOT_PAT }}
           submodules: recursive
-      - name: Checkout Submodules
-        id: checkout-submodules
-        run: |
-          pwd
-          ls -al
-          git submodule sync && git submodule update --init --recursive
-          ls -al
       - name: Get Branch Name
         shell: bash
         run: echo "::set-output name=name::$(bash scripts/branchname.sh)"
@@ -28,10 +21,7 @@ jobs:
         run: make ui.build
       - name: Build Antora
         id: antora-build
-        run: |
-          pwd
-          ls -al
-          make antora.build
+        run: make antora.build
       # - name: Deploy to Github Pages
       #   id: deploy-gh
       #   if: success() && steps.branch.outputs.name == 'master'
