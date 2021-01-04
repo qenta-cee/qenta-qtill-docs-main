@@ -9,6 +9,8 @@ Content, pages, navigation, antora.yml: `content/`
 
 # Recommended Workflow
 
+Folders `content`and `ui-customizations` are submodules of `qenta-docs-content` and `qenta-docs-ui-customizations`.
+
 ## 1. Clone Recursively
 
 ## 2. Make Changes
@@ -18,11 +20,17 @@ After changing content, UI or any other part inside the submodules directories, 
 Then push current repo to trigger a build.
 
 Pushes to `master` branch will be deployed **publically** to `gh-pages`
-Pushes to any other branch will be deployed to S3/branches/branch_name/
+Pushes to any other branch shall be deployed to `S3/branches/branch_name/`
 
 # Build and Dev Locally
 
 Highly recommended to use the Dockerfiles (ui and antora) via the Makefile for each step.
+
+## Update UI
+
+`qenta-docs-main` rebase/merge from `https://gitlab.com/antora/antora-ui-default.git`
+
+`qenta-docs-ui-customizations` rebase/merge from `https://github.com/Mogztter/antora-lunr.git`
 
 ## 1. Build the UI
 ```sh
