@@ -3,4 +3,4 @@
 	url = https://github.com/HMKnapp/qenta-docs-ui-customizations.git
 [submodule "content"]
 	path = content
-	url = https://github.com/HMKnapp/qenta-docs-content.git
+	url = https://github.com/qenta-cee/qenta-docs-content.git
