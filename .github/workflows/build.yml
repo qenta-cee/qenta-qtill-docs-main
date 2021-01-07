@@ -21,7 +21,9 @@ jobs:
         run: make ui.build
       - name: Build Documentation
         id: antora-build
-        run: make antora.build
+        run: |
+          make antora.build
+          touch build/site/.nojekyll
       # - name: Deploy to Github Pages
       #   id: deploy-gh
       #   if: success() && steps.branch.outputs.name == 'master'

@@ -6,10 +6,10 @@ site:
 content:
   edit_url: ~
   sources:
-  - url: ./
-    branches: HEAD
-    start_paths:
-    - content/*
+    - url: ./
+      branches: HEAD
+      start_paths:
+        - content/*
 runtime:
   cache_dir: ./build/cache
 ui:
