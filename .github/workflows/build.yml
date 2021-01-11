@@ -33,9 +33,9 @@ jobs:
           build_dir: build/site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Generate Site Package
-        uses: actions/upload-artifact@v2
-        with:
-          name: Site
-          path: build/site/
-          retention-days: 2
+      # - name: Generate Site Package
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: Site
+      #     path: build/site/
+      #     retention-days: 2
