@@ -18,7 +18,8 @@ const postcssVar = require('postcss-custom-properties')
 const { Transform } = require('stream')
 const map = (transform) => new Transform({ objectMode: true, transform })
 const through = () => map((file, enc, next) => next(null, file))
-const uglify = require('gulp-uglify')
+const terser = require('gulp-terser')
+const terserConfig = { keep_fnames: true, mangle: false }
 const vfs = require('vinyl-fs')
 
 module.exports = (src, dest, preview) => () => {
@@ -59,7 +60,7 @@ module.exports = (src, dest, preview) => () => {
   return merge(
     vfs
       .src('js/+([0-9])-*.js', { ...opts, sourcemaps })
-      .pipe(uglify())
+      .pipe(terser(terserConfig))
       // NOTE concat already uses stat from newest combined file
       .pipe(concat('js/site.js')),
     vfs
@@ -93,7 +94,7 @@ module.exports = (src, dest, preview) => () => {
         })
       )
       .pipe(buffer())
-      .pipe(uglify()),
+      .pipe(terser(terserConfig)),
     // NOTE use this statement to bundle a JavaScript library that cannot be browserified, like jQuery
     //vfs.src(require.resolve('<package-name-or-require-path>'), opts).pipe(concat('js/vendor/<library-name>.js')),
     vfs
