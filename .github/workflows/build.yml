@@ -24,15 +24,15 @@ jobs:
         run: |
           make antora.build
           touch build/site/.nojekyll
-      # - name: Deploy to Github Pages
-      #   id: deploy-gh
-      #   if: success() && steps.branch.outputs.name == 'master'
-      #   uses: crazy-max/ghaction-github-pages@v2
-      #   with:
-      #     target_branch: gh-pages
-      #     build_dir: build/site
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to Github Pages
+        id: deploy-gh
+        if: success() && steps.branch.outputs.name == 'master'
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: build/site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Generate Site Package
         uses: actions/upload-artifact@v2
         with:
