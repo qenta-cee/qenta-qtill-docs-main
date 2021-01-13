@@ -15,8 +15,8 @@ rm -r build/site/${PATH_TO_REMOVE}/
 find build/site/ -type f -name '*.html' > $TEMPDIR/files.list
 for file in $(cat $TEMPDIR/files.list); do
   (
-  ${SED_BINARY} -i 's,\(../\)\+_/\.\./,/,' "$file"
-  ${SED_BINARY} -i 's,\(../\)\+_,/_,' "$file"
+  ${SED_BINARY} -i 's,\(\.\./\)\+_/\.\./,/,' "$file"
+  ${SED_BINARY} -i 's,\(\.\./\)\+_,/_,' "$file"
   )&
 done
 ${SED_BINARY} -i 's,'${PATH_TO_REMOVE}',,g' build/site/search-index.js
