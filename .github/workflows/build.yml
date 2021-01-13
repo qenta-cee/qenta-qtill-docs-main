@@ -24,6 +24,9 @@ jobs:
         run: |
           make antora.build
           touch build/site/.nojekyll
+      - name: Modify Paths
+        id: post-process
+        run: bash scripts/remove_path.sh "online-guides/main"
       - name: Deploy to Github Pages
         id: deploy-gh
         if: success() && steps.branch.outputs.name == 'master'
@@ -33,9 +36,3 @@ jobs:
           build_dir: build/site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # - name: Generate Site Package
-      #   uses: actions/upload-artifact@v2
-      #   with:
-      #     name: Site
-      #     path: build/site/
-      #     retention-days: 2
