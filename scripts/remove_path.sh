@@ -20,4 +20,5 @@ for file in $(cat $TEMPDIR/files.list); do
   )&
 done
 ${SED_BINARY} -i 's,'${PATH_TO_REMOVE}',,g' build/site/search-index.js
+${SED_BINARY} -i 's,'${PATH_TO_REMOVE}/',,g' build/site/sitemap.xml
 wait
