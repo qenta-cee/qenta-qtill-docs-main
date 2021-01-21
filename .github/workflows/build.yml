@@ -2,6 +2,8 @@ name: Build
 
 on:
   push:
+  repository_dispatch:
+    types: [content-update]
 
 jobs:
   build:
@@ -34,5 +36,7 @@ jobs:
         with:
           target_branch: gh-pages
           build_dir: build/site
+          keep_history: true
+          fqdn: ${{ secrets.FQDN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
