@@ -26,6 +26,9 @@ jobs:
         run: |
           make antora.build
           touch build/site/.nojekyll
+      - name: Check for Invalid References
+        id: invalid-refs
+        run: bash scripts/invalid_refs.sh || true
       - name: Modify Paths
         id: post-process
         run: bash scripts/remove_path.sh "online-guides/main"
