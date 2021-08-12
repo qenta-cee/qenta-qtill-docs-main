@@ -81,7 +81,7 @@ function publish() {
     git config user.name "${CFG_BOT_USER}"
     git config user.email "${CFG_BOT_EMAIL}"
     git add . && \
-    git commit -m "CI: add redirects" && \
+    git commit -m "CI: add redirects" || exit 0
     git push
   )
 }
