@@ -7,7 +7,7 @@ echo "Building UI"
 make ui.build &>/dev/null
 
 echo "Building Documentation"
-make antora.build &>/dev/null
+make antora.build
 
 make antora.run &>/dev/null &
 echo -n "Staring webserver in the background"
