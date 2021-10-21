@@ -2,11 +2,6 @@ name: Build
 
 on:
   push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
   repository_dispatch:
     types: [content-update]
 

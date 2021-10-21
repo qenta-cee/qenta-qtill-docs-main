@@ -13,7 +13,7 @@ INVALID_REFS=$(
 N_REFS=$(echo "${INVALID_REFS}" | wc -l | xargs)
 N_FILES=$(echo "${INVALID_REFS}" | cut -d ':' -f1 | uniq | wc -l | xargs)
 
-[[ N_REFS >= 1 ]] && exit 0
+[[ ${N_REFS} -lt 1 ]] && exit 0
 
 echo "::warning::${N_FILES} pages contain invalid references. Please check build log for details!"
 echo "::group::Click to show files"
