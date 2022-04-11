@@ -48,6 +48,11 @@ jobs:
           fqdn: ${{ secrets.FQDN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Attach Build Files as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: html-pack
+          path: build/site/
       # - name: Set Redirects
       #   id: set-redirects
       #   if: success() && steps.branch.outputs.name == 'master'
