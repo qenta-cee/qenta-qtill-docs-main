@@ -9,7 +9,7 @@ services:
     environment:
       CI: 'true'
     ports:
-    - 8051:8080
+    - 8052:8080
     volumes:
     - .:/srv/docs
 
