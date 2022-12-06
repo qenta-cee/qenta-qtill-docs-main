@@ -1,6 +1,6 @@
 [submodule "ui-customizations"]
 	path = ui-customizations
-	url = https://github.com/qenta-cee/qenta-docs-ui-customizations.git
+	url = https://github.com/qenta-cee/qenta-qtill-docs-ui-customizations.git
 [submodule "content"]
 	path = content
-	url = https://github.com/qenta-cee/qenta-docs-content.git
+	url = https://github.com/qenta-cee/qenta-qtill-docs-content.git
