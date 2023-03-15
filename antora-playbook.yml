@@ -18,3 +18,7 @@ ui:
   supplemental_files: ./ui-customizations/supplemental_ui
 urls:
   html_extension_style: indexify
+asciidoc:
+  extensions:
+  - ./ui-customizations/lib/tabs-block.js
+  - asciidoctor-emoji
