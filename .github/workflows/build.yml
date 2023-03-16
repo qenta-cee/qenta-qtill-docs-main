@@ -21,7 +21,7 @@ jobs:
           submodules: recursive
       - name: Get Branch Name
         shell: bash
-        run: echo "::set-output name=name::$(bash scripts/branchname.sh)"
+        run: echo "name::$(bash scripts/branchname.sh)"
         id: branch
       - name: Build UI
         id: ui-build
