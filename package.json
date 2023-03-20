@@ -55,6 +55,7 @@
     "vinyl-fs": "^2.4.1"
   },
   "dependencies": {
-    "asciidoctor-emoji": "^0.4.2"
+    "asciidoctor-emoji": "^0.4.2",
+    "postcss": "^8.4.5"
   }
 }
