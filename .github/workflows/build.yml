@@ -53,6 +53,9 @@ jobs:
         with:
           name: html-pack
           path: build/site/
+      - name: Install dependencies
+          run: |
+            npm ci
       # - name: Set Redirects
       #   id: set-redirects
       #   if: success() && steps.branch.outputs.name == 'master'
