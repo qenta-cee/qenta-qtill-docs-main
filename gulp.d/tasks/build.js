@@ -1,29 +1,26 @@
 'use strict'
-
-
-import autoprefixer from 'autoprefixer'
-import browserify from 'browserify'
-import buffer from 'vinyl-buffer'
-import concat from 'gulp-concat'
-import cssnano from 'cssnano'
-import fs from 'fs-extra'
-import imagemin from 'gulp-imagemin'
-import merge from 'merge-stream'
-import ospath from 'path'
-import postcss from 'gulp-postcss'
-import postcssCalc from 'postcss-calc'
-import postcssImport from 'postcss-import'
-import postcssUrl from 'postcss-url'
-import postcssVar from 'postcss-custom-properties'
-import Transform from 'stream'
-import vfs from 'vinyl-fs'
-import terser from 'gulp-terser'
-
-
+ 
+const autoprefixer = import('autoprefixer')
+const browserify = import('browserify')
+const buffer = import('vinyl-buffer')
+const concat = import('gulp-concat')
+const cssnano = import('cssnano')
+const fs = import('fs-extra')
+const imagemin = import('gulp-imagemin')
+const merge = import('merge-stream')
+const ospath = import('path')
+const path = ospath.posix
+const postcss = import('gulp-postcss')
+const postcssCalc = import('postcss-calc')
+const postcssImport = import('postcss-import')
+const postcssUrl = import('postcss-url')
+const postcssVar = import('postcss-custom-properties')
+const { Transform } = import('stream')
 const map = (transform) => new Transform({ objectMode: true, transform })
 const through = () => map((file, enc, next) => next(null, file))
+const terser = import('gulp-terser')
 const terserConfig = { keep_fnames: true, mangle: false }
-
+const vfs = import('vinyl-fs')
 
 module.exports = (src, dest, preview) => () => {
   const opts = { base: src, cwd: src }
