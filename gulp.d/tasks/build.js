@@ -1,26 +1,26 @@
 'use strict'
- 
-const autoprefixer = import('autoprefixer')
-const browserify = import('browserify')
-const buffer = import('vinyl-buffer')
-const concat = import('gulp-concat')
-const cssnano = import('cssnano')
-const fs = import('fs-extra')
-const imagemin = import('gulp-imagemin')
-const merge = import('merge-stream')
-const ospath = import('path')
+
+const autoprefixer = require('autoprefixer')
+const browserify = require('browserify')
+const buffer = require('vinyl-buffer')
+const concat = require('gulp-concat')
+const cssnano = require('cssnano')
+const fs = require('fs-extra')
+const imagemin = require('gulp-imagemin')
+const merge = require('merge-stream')
+const ospath = require('path')
 const path = ospath.posix
-const postcss = import('gulp-postcss')
-const postcssCalc = import('postcss-calc')
-const postcssImport = import('postcss-import')
-const postcssUrl = import('postcss-url')
-const postcssVar = import('postcss-custom-properties')
-const { Transform } = import('stream')
+const postcss = require('gulp-postcss')
+const postcssCalc = require('postcss-calc')
+const postcssImport = require('postcss-import')
+const postcssUrl = require('postcss-url')
+const postcssVar = require('postcss-custom-properties')
+const { Transform } = require('stream')
 const map = (transform) => new Transform({ objectMode: true, transform })
 const through = () => map((file, enc, next) => next(null, file))
-const terser = import('gulp-terser')
+const terser = require('gulp-terser')
 const terserConfig = { keep_fnames: true, mangle: false }
-const vfs = import('vinyl-fs')
+const vfs = require('vinyl-fs')
 
 module.exports = (src, dest, preview) => () => {
   const opts = { base: src, cwd: src }
@@ -41,7 +41,7 @@ module.exports = (src, dest, preview) => () => {
         filter: '**/~typeface-*/files/*',
         url: (asset) => {
           const relpath = asset.pathname.substr(1)
-          const abspath = import.resolve(relpath)
+          const abspath = require.resolve(relpath)
           const basename = ospath.basename(abspath)
           const destpath = ospath.join(dest, 'font', basename)
           if (!fs.pathExistsSync(destpath)) fs.copySync(abspath, destpath)
