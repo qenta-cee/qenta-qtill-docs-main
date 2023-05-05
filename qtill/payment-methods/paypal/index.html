@@ -1,0 +1,2376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/qtill/payment-methods/paypal/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"></link>
+<link rel="stylesheet" href="/_/css/tables.css">
+<link rel="stylesheet" href="/_/css/tabs.css">
+<link rel="stylesheet" href="/_/css/extra.css">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://guides.qenta.com/">Home</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://payments.qenta.com/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://payments.qenta.com/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../../">QTILL Checkout Enterprise</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../">Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../credit-card/">Credit Card</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../3DS/">3D Secure/Recurring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../3DS/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../3DS/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../3DS/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../3DS/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../3DS/#DEPOSITREVERSAL"><mark>POST</mark> DepositReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../3DS/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../3DS/#RECURPAYMENT"><mark>POST</mark> RecurPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../3DS/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../3DS/#REFUNDREVERSAL"><mark>POST</mark> RefundReversal</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../credit-card-mail-order/">Mail Order and Telephone Order</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../credit-card-mail-order/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../credit-card-mail-order/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../credit-card-mail-order/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../credit-card-mail-order/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../credit-card-mail-order/#DEPOSITREVERSAL"><mark>POST</mark> DepositReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../credit-card-mail-order/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../credit-card-mail-order/#RECURPAYMENT"><mark>POST</mark> RecurPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../credit-card-mail-order/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../credit-card-mail-order/#REFUNDREVERSAL"><mark>POST</mark> RefundReversal</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../eps-giropay/">EPS/Giropay</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../eps-giropay/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../eps-giropay/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../eps-giropay/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../eps-giropay/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../eps-giropay/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payolution/">Payolution</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payolution/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payolution/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payolution/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payolution/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payolution/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payolution/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="./">PayPal</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#RECURPAYMENT"><mark>POST</mark> RecurPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../setup-3rdparty-permission/">3rd Party Permissions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../paysafecard/">Paysafecard</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../paysafecard/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../paysafecard/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../paysafecard/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../paysafecard/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../circlek/">Circle K</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../cvs/">CVS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../dollar-general/">Dollar General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../obucks/">oBucks</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../pagoefectivo/">PagoEfectivo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../safetypay/">Safetypay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../p24/">P24</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../riverty/">Riverty</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../riverty-invoice/">Riverty Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-invoice/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-invoice/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-invoice/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-invoice/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-invoice/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-invoice/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../riverty-installment/">Riverty Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-installment/#GETINSTALLMENTPLANS"><mark>POST</mark> GetInstallmentPlans</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-installment/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-installment/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-installment/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-installment/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-installment/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../riverty-installment/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../sepa/">SEPA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sepa/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sepa/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sepa/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sepa/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sepa/#DEPOSITREVERSAL"><mark>POST</mark> DepositReversal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sepa/#RECURPAYMENT"><mark>POST</mark> RecurPayment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../sofort/">Sofort.</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sofort/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sofort/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sofort/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sofort/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../sofort/#RECURPAYMENT"><mark>POST</mark> RecurPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../registering-sofort/">Registering/Setting up</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../commands/">Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../commands/pre-transaction/">Pre Transaction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../commands/pre-transaction/#ping"><mark>POST</mark> Ping</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../commands/pre-transaction/#generateOrderNumber"><mark>POST</mark> CreateOrder</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../commands/transaction/">Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../commands/post-transaction/">Post Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../commands/query/">Query</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../commands/query/#queryOrders"><mark>POST</mark> Query Orders</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../commands/query/#queryCredits"><mark>POST</mark> Query Credits</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../commands/query/#queryBatches"><mark>POST</mark> Query Batches</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../command-by-payment-method/">Commands by Payment Method</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Parameters</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../parameters/detailed-description/">Detailed Description</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../parameters/detailed-description/#requestParams">Request Parameters</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#ACCEPT_HEADERS">ACCEPT_HEADERS</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#ACCOUNTID">ACCOUNTID</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#ACCOUNT_TYPE">ACCOUNT_TYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#adminPassword">ADMIN_PASSWORD</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#amount">AMOUNT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#APPLICATIONTYPE">APPLICATIONTYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#BATCHNUMBER">BATCHNUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#BANK_BIC">BANK_BIC</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#BANK_ACCOUNT_IBAN">BANK_ACCOUNT_IBAN</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#BRAND">BRAND</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#cancelUrl">CANCELURL</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#CARDHOLDERNAME">CARDHOLDERNAME</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#CARDVERIFYCODE">CARDVERIFYCODE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#command">COMMAND</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#confirmUrl">CONFIRMURL</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#CREATEBEGINTIME">CREATEBEGINTIME</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#CREATEENDTIME">CREATEENDTIME</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#CREDITOR_ID">CREDITOR_ID</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#CREDITNUMBER">CREDITNUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#currency">CURRENCY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#CONSUMER_PLAN_NUMBER">CONSUMER_PLAN_NUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#customerStatement">CUSTOMERSTATEMENT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#CONSUMER_MERCHANT_CRM_ID">CONSUMER_MERCHANT_CRM_ID</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#depositamount">DEPOSITAMOUNT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#DEPOSITFLAG">DEPOSITFLAG</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#DUE_DATE">DUE_DATE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#EXPIRY">EXPIRY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#failureUrl">FAILUREURL</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#FALLBACK">FALLBACK</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#FOR">FOR</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#INITTYPE">INITTYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#IP_ADDRESS">IP_ADDRESS</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#IS_RECURRING_TRANSACTION">IS_RECURRING_TRANSACTION</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#ISSUE_DATE">ISSUE_DATE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#ISSUE_NUMBER">ISSUE_NUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#ISO_TRANSACTION_TYPE">ISO_TRANSACTION_TYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#language">LANGUAGE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#logpath">LOGPATH</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#mandateId">MANDATE_ID</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#mandateSignatureDate">MANDATE_SIGNATURE_DATE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#MAXAMOUNT">MAXAMOUNT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#MAXTIMEOPENED">MAXTIMEOPENED</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#MAXTIMECLOSED">MAXTIMECLOSED</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#merchantkey">MERCHANTKEY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#MERCHANTREFERENCE">MERCHANTREFERENCE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#MERCHANT_TOKENIZATION_FLAG">MERCHANT_TOKENIZATION_FLAG</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#MINAMOUNT">MINAMOUNT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#MINTIMEOPENED">MINTIMEOPENED</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#MINTIMECLOSED">MINTIMECLOSED</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#MODIFYBEGINTIME">MODIFYBEGINTIME</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#MODIFYENDTIME">MODIFYENDTIME</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#ORDERBY">ORDERBY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#orderDescription">ORDERDESCRIPTION</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#ORDERNUMBER">ORDERNUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#orderReference">ORDERREFERENCE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#ORDERTEXT">ORDERTEXT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#ORIGINATOR">ORIGINATOR</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#OVERWRITE_WAKEUPMESSAGE">OVERWRITE_WAKEUPMESSAGE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#PAN">PAN</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#PAYMENTNUMBER">PAYMENTNUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#paymentType">PAYMENTTYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#PERIODIC_TYPE">PERIODIC_TYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#REFERENCENUMBER">REFERENCENUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#RETURNATMOST">RETURNATMOST</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#serviceUrl">SERVICEURL</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#SKIPFIRST">SKIPFIRST</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#SOURCEORDERNUMBER">SOURCEORDERNUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#STATE">STATE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#successUrl">SUCCESSURL</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#TRANSACTION_IDENTIFIER">TRANSACTION_IDENTIFIER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#TRANSACTION_TYPE">TRANSACTION_TYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#USER_AGENT">USER_AGENT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#WAKEUPMESSAGE_METHOD">WAKEUPMESSAGE_METHOD</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#windowName">WINDOWNAME</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../parameters/detailed-description/#responseParams">Response Parameters</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#batches">batches</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#body">body</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#creditNumber">creditNumber</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#credits">credits</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#errorCode">errorCode</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#header">header</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#message">message</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#objectsTotal">objectsTotal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#orders">orders</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#originator">originator</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#paySysMessage">paySysMessage</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#status">status</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/detailed-description/#version">version</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../parameters/additional-parameters/">Additional Parameters</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../parameters/additional-parameters/#customerParameters">Customer Parameters</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/additional-parameters/#consumerData">Consumer Data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/additional-parameters/#customerBillingData">Consumer Billing Data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/additional-parameters/#customerShippingData">Consumer Shipping Data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/additional-parameters/#customerBrowserData">Consumer Browser Data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/additional-parameters/#optionalBasketItemParameters">Basket Items Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../parameters/additional-parameters/#browserParams">Browser Parameters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../parameters/additional-parameters/#optionalRecipientParams">Recipient Parameters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../parameters/additional-parameters/#objectPropertiesResponse">Object Properties in the Response</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/additional-parameters/#orderBasis">Orders as a Basis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/additional-parameters/#creditNotesBasis">Credit Notes as a Basis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../parameters/additional-parameters/#dailyClosisBasis">Daily Closing as a Basis</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../errors/">Error Codes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../test/">Test</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../test/#testDataCreditCard">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../test/#testDataEPSGiropay">EPS/Giropay</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../test/#testDataPayPal">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../test/#testDataPaysafecard">Paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../test/#testDataSofort">Sofort</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../test/#testDataSepa">SEPA</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../logos/">Logos</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../glossary/">Glossary</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../glossary/#A">A</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../glossary/#B">B</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../glossary/#C">C</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../glossary/#F">F</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../glossary/#I">I</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../glossary/#M">M</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../glossary/#O">O</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../glossary/#P">P</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../glossary/#S">S</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../glossary/#T">T</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QTILL Checkout Enterprise</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../../">QTILL Checkout Enterprise</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../../">QTILL Checkout Enterprise</a></li>
+    <li><a href="../">Payment Methods</a></li>
+    <li><a href="./">PayPal</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="paypal"><a class="anchor" href="#paypal"></a>Paypal</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Paypal is an online financial service that allows paying for items using a secure internet account.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Store the PayPal <code>TRANSACTIONID</code> of the payment as returned by the parameter <code>gatewayReferenceNumber</code> within the data regarding the corresponding session and order for documentation purposes.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To enable the integration of PayPal into the online shop in our QENTA Checkout solutions some third-party permissions have to be added to the PayPal Business Account for accessing PayPal-related payment information. Follow the required setup steps described in <a href="../setup-3rdparty-permission/" class="page" target="\"_blank\"">3rd party permissions</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="commands"><a class="anchor" href="#commands"></a>Commands</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_pre_transaction_commands"><a class="anchor" href="#_pre_transaction_commands"></a><a href="../../commands/pre-transaction/" class="page" target="\"_blank\"">Pre Transaction Commands</a></h3>
+<div class="paragraph">
+<p>The first step is to generate a unique order number with the command <a href="../../commands/pre-transaction/#generateOrderNumber" class="page" target="\"_blank\"">CREATEORDER</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_transaction_commands"><a class="anchor" href="#_transaction_commands"></a><a href="../../commands/transaction/" class="page" target="\"_blank\"">Transaction Commands</a></h3>
+<div class="sect3 style-header">
+<h4 id="INITIATEPAYMENT"><a class="anchor" href="#INITIATEPAYMENT"></a><a href="../../commands/transaction/#initiatePayment" class="page" target="\"_blank\"">INITIATEPAYMENT</a></h4>
+<div class="exampleblock flex-block">
+<div class="content">
+<div class="openblock main-block">
+<div class="content">
+<div class="paragraph">
+<p><span class="authorization">Authorizations:</span> Basic Auth</p>
+</div>
+<div class="paragraph">
+<p><span class="main-block-headline">Request</span></p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#merchantkey" class="page" target="\"_blank\"">MERCHANTKEY</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#logpath" class="page" target="\"_blank\"">LOGPATH</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#command" class="page" target="\"_blank\"">COMMAND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#language" class="page" target="\"_blank\"">LANGUAGE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#INITTYPE" class="page" target="\"_blank\"">INITTYPE</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#depositamount" class="page" target="\"_blank\"">DEPOSITAMOUNT</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paymentType" class="page" target="\"_blank\"">PAYMENTTYPE</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orderReference" class="page" target="\"_blank\"">ORDERREFERENCE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#amount" class="page" target="\"_blank\"">AMOUNT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#customerStatement" class="page" target="\"_blank\"">CUSTOMERSTATEMENT</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#currency" class="page" target="\"_blank\"">CURRENCY</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#TRANSACTION_IDENTIFIER" class="page" target="\"_blank\"">TRANSACTION_IDENTIFIER</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orderNumber" class="page" target="\"_blank\"">ORDERNUMBER</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#confirmUrl" class="page" target="\"_blank\"">CONFIRMURL</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orderDescription" class="page" target="\"_blank\"">ORDERDESCRIPTION</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#APPLICATIONTYPE" class="page" target="\"_blank\"">APPLICATIONTYPE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#successUrl" class="page" target="\"_blank\"">SUCCESSURL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#ORIGINATOR" class="page" target="\"_blank\"">ORIGINATOR</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#cancelUrl" class="page" target="\"_blank\"">CANCELURL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Parameters of <a href="../../parameters/additional-parameters/#customerBillingData" class="page" target="\"_blank\"">consumer billing data</a> and <a href="../../parameters/additional-parameters/#optionalBasketItemParameters" class="page">basket data</a> are required for <a href="https://www.paypal.com/at/webapps/mpp/paypal-safety-and-security" target="\"_blank\"">PayPal Seller Protection</a>.
+</td>
+</tr>
+</table>
+</div>
+<table id="lengthRestrictions" class="tableblock frame-all grid-all stretch big-screen">
+<caption class="title">Table 1. Length Restrictions for Some <a href="../../parameters/additional-parameters/#customerBillingData" class="page" target="\"_blank\"">Basket Data</a></caption>
+<colgroup>
+<col style="width: 40%;">
+<col style="width: 30%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameter</th>
+<th class="tableblock halign-left valign-top">Data type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/additional-parameters/#BASKET_ITEM_ARTICLE_NUMBER" class="page" target="\"_blank\"">BASKET_ITEM_&lt;m&gt;_ARTICLE_NUMBER</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters, up to 128 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique ID of article n in the shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/additional-parameters/#BASKET_ITEM_DESCRIPTION" class="page" target="\"_blank\"">BASKET_ITEM_&lt;m&gt;_DESCRIPTION</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters, up to 128 characters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Product description of article n in the shopping basket.</p></td>
+</tr>
+</tbody>
+</table>
+<table id="lengthRestrictionsMobile" class="tableblock frame-all grid-all stretch mobile-screen">
+<caption class="title">Table 2. Length Restrictions for Some <a href="../../parameters/additional-parameters/#customerBillingData" class="page">Basket Data</a></caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top" colspan="2"><code><a href="../../parameters/additional-parameters/#BASKET_ITEM_ARTICLE_NUMBERMobile" class="page">BASKET_ITEM_&lt;m&gt;_ARTICLE_NUMBER</a></code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Data</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Value</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters, up to 128 characters.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unique ID of article n in the shopping basket.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong><code><a href="../../parameters/additional-parameters/#BASKET_ITEM_DESCRIPTIONMobile" class="page">BASKET_ITEM_&lt;m&gt;_DESCRIPTION</a></code></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Data</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Value</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alphanumeric with special characters, up to 128 characters.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Product description of article n in the shopping basket.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Optional request parameters <code><a href="../../parameters/detailed-description/#customerStatement" class="page">CUSTOMERSTATEMENT</a></code> and <code><a href="../../parameters/detailed-description/#orderReference" class="page">ORDERREFERENCE</a></code>, are more restricted about their length and allowed characters than usual.</p>
+</div>
+<div id="redeemVouchers" class="paragraph">
+<p>Parameter <code>basketItem</code> to Redeem Vouchers</p>
+</div>
+<div id="bigscreenbasketItem" class="paragraph">
+<p>If the consumer in the online shop redeems a voucher or coupon during the payment process, the optional request parameter <code><a href="../../parameters/additional-parameters/#BASKET_ITEMS" class="page" target="\"_blank\"">BASKET_ITEMS</a></code> must be used. This parameter must contain the negative amount corresponding to the voucher or coupon value. For vouchers with a percentage discount, the percentage to be deducted must first be converted into an absolute value. The total basket amount displayed to the consumer in the online shop will then show both the voucher amount and the total basket amount reduced by the voucher amount.</p>
+</div>
+<div id="mobilebasketItem" class="paragraph">
+<p>If the consumer in the online shop redeems a voucher or coupon during the payment process, the optional request parameter <code><a href="../../parameters/additional-parameters/#BASKET_ITEMSMobile" class="page">BASKET_ITEMS</a></code> must be used. This parameter must contain the negative amount corresponding to the voucher or coupon value. For vouchers with a percentage discount, the percentage to be deducted must first be converted into an absolute value. The total basket amount displayed to the consumer in the online shop will then show both the voucher amount and the total basket amount reduced by the voucher amount.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+PayPal payment method can be initialized if the merchant sends <strong><code>PAYPAL</code></strong> for parameter <code><a href="../../parameters/detailed-description/#initTypeTable" class="page" target="\"_blank\"">INITTYPE</a></code> and <strong><code>PAYPAL</code></strong> for the parameter <code><a href="../../parameters/detailed-description/#paymentType" class="page" target="\"_blank\"">PAYMENTTYPE</a></code>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="main-block-headline">Responses</span></p>
+</div>
+<div class="paragraph">
+<p> <details><summary> 
+<span class="response-ok">201</span> Successful initialization.
+ </summary><div> </p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#status" class="page" target="\"_blank\"">status</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#header" class="page" target="\"_blank\"">header</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#version" class="page" target="\"_blank\"">version</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#body" class="page" target="\"_blank\"">body</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page" target="\"_blank\"">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page" target="\"_blank\"">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page" target="\"_blank\"">paySysMessage</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#originator" class="page" target="\"_blank\"">originator</a></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> </div></details> </p>
+</div>
+<div class="paragraph">
+<p> <details id="error"><summary> 
+<span class="response-error">400</span> Validating the request data failed
+ </summary><div> </p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page" target="\"_blank\"">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page" target="\"_blank\"">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page" target="\"_blank\"">paySysMessage</a></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> </div></details> </p>
+</div>
+</div>
+</div>
+<div class="openblock aside-block">
+<div class="content">
+<div class="paragraph post">
+<p><span class="post">POST</span> / https://api.qenta.com/enterprise<br></p>
+</div>
+<div class="paragraph">
+<p><span class="aside-header">Request samples</span></p>
+</div>
+<div class="listingblock "source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code><span>COMMAND</span>=<strong>INITIATEPAYMENT</strong>&amp;
+<span>MERCHANTKEY</span>=<strong>43gADp5.UOZxPTet6O8o8K6o-7RefQB3BO21OMu4chB65LJUI_</strong>&amp;
+<span>INITTYPE</span>=<strong>PAYPAL</strong>&amp;
+<span>PAYMENTTYPE</span>=<strong>PAYPAL</strong>&amp;
+<span>ORDERNUMBER</span>=<strong>65061</strong>&amp;
+<span>LANGUAGE</span>=<strong>en</strong>&amp;
+<span>AMOUNT</span>=<strong>1</strong>&amp;
+<span>CURRENCY</span>=<strong>EUR</strong>&amp;
+<span>APPLICATIONTYPE</span>=<strong>S</strong>&amp;
+<span>SERVICEURL</span>=<strong>http://yourimprint.com/</strong>&amp;
+<span>CUSTOMERSTATEMENT</span>=<strong>eh3462t3hg346</strong>&amp;
+<span>SUCCESSURL</span>=<strong>https://yoursuccessurl.com</strong>&amp;
+<span>ORDERDESCRIPTION</span>=<strong>Test</strong>&amp;
+<span>CANCELURL</span>=<strong>https://yourfailureurl.com</strong>&amp;
+<span>TRANSACTION_IDENTIFIER</span>=<strong>INITIAL</strong></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="aside-header">Response samples</span></p>
+</div>
+<div class="listingblock source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code><span>header</span>=<strong>Content-Type%3A+text%2Fhtml%0D%0A</strong>&amp;
+<span>body</span>=<strong>%3Chtml%3E%3Chead%3E%0D%0A%3Cmeta+http-equiv%3D%22refresh%22+content%3D%220%3BURL%3Dhttps%3A%2F%2Fwww.computop-paygate.com%2Fpaypal.aspx%3FMerchantID%3DQenta_Test1%26Len%3D367%26Data%3DE88E6E90321A17CF310FF8F79C02FF346B3256BDB55498C6B466A7607C1D7EA022CF09BCE657275B5E9A10E96DE03C3E4FD1EA73F8C397674F96B7C85EF1725DD52C4CB4A6246FC9782C792CBF35CD5398E8C84AF891B49CAAED9772CF0FF638E6FFE47A2B573F3B4ECC3D53F67AB87CBB08732FCBEFE0AEC998FA1387ED03126D5682A2B4C83647FAA3EBF663D7DA63516FA51F5847FD1965F080670A2998634CC90FB758B990BC40B0CFA09370A7D84423D7E64FB8AB7158C9D2AD08BD0EE5450C991CC680BBED8B28719DCA5A2E614CF8B003D663485E61592A28CC22656E5F10E3A935BB8AF9AF8AC2610BB34D192562AC4AD8D466C549227B367364C40682C873408D90D485B32A84B3C5E525A80EDFF8F9D3D8363A4231E59D0CC74A97A1278699EB6BBFC94EC38C051130BB55A47DFB2DF99CF8ADE0DA128992EAA13F69BFB2E8975DB25D9E8C3395891582BAA2981EDE4C508F77D8338849AED8B4F4B31AC31E7D728BFE6A89C52BFFAD9CC5%22%3E%0D%0A%3C%2Fhead%3E%3C%2Fhtml%3E</strong>&amp;
+<span>version</span>=<strong>qtillserver+3.23.0.47</strong>&amp;
+<span>status</span>=<strong>0</strong></code></pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Decode the text with URL Decoder. Use Notepad ++ or some other URL Decoder. After decoding the response should look like this.</p>
+<div class="listingblock source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">header=Content-Type: text/html
+&amp;body=&lt;html&gt;&lt;head&gt;
+&lt;meta http-equiv="refresh" content="0;URL=https://www.computop-paygate.com/paypal.aspx?MerchantID=Qenta_Test1&amp;Len=367&amp;Data=E88E6E90321A17CF310FF8F79C02FF346B3256BDB55498C6B466A7607C1D7EA022CF09BCE657275B5E9A10E96DE03C3E4FD1EA73F8C397674F96B7C85EF1725DD52C4CB4A6246FC9782C792CBF35CD5398E8C84AF891B49CAAED9772CF0FF638E6FFE47A2B573F3B4ECC3D53F67AB87CBB08732FCBEFE0AEC998FA1387ED03126D5682A2B4C83647FAA3EBF663D7DA63516FA51F5847FD1965F080670A2998634CC90FB758B990BC40B0CFA09370A7D84423D7E64FB8AB7158C9D2AD08BD0EE5450C991CC680BBED8B28719DCA5A2E614CF8B003D663485E61592A28CC22656E5F10E3A935BB8AF9AF8AC2610BB34D192562AC4AD8D466C549227B367364C40682C873408D90D485B32A84B3C5E525A80EDFF8F9D3D8363A4231E59D0CC74A97A1278699EB6BBFC94EC38C051130BB55A47DFB2DF99CF8ADE0DA128992EAA13F69BFB2E8975DB25D9E8C3395891582BAA2981EDE4C508F77D8338849AED8B4F4B31AC31E7D728BFE6A89C52BFFAD9CC5"&gt;
+&lt;/head&gt;&lt;/html&gt;&amp;version=qtillserver 3.23.0.47&amp;status=0</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Beautify code (delete everything above and below html tag, and replace every "+" with empty space).</p>
+<div class="listingblock source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta http-equiv="refresh" content="0;URL=https://www.computop-paygate.com/paypal.aspx?MerchantID=Qenta_Test1&amp;Len=367&amp;Data=E88E6E90321A17CF310FF8F79C02FF346B3256BDB55498C6B466A7607C1D7EA022CF09BCE657275B5E9A10E96DE03C3E4FD1EA73F8C397674F96B7C85EF1725DD52C4CB4A6246FC9782C792CBF35CD5398E8C84AF891B49CAAED9772CF0FF638E6FFE47A2B573F3B4ECC3D53F67AB87CBB08732FCBEFE0AEC998FA1387ED03126D5682A2B4C83647FAA3EBF663D7DA63516FA51F5847FD1965F080670A2998634CC90FB758B990BC40B0CFA09370A7D84423D7E64FB8AB7158C9D2AD08BD0EE5450C991CC680BBED8B28719DCA5A2E614CF8B003D663485E61592A28CC22656E5F10E3A935BB8AF9AF8AC2610BB34D192562AC4AD8D466C549227B367364C40682C873408D90D485B32A84B3C5E525A80EDFF8F9D3D8363A4231E59D0CC74A97A1278699EB6BBFC94EC38C051130BB55A47DFB2DF99CF8ADE0DA128992EAA13F69BFB2E8975DB25D9E8C3395891582BAA2981EDE4C508F77D8338849AED8B4F4B31AC31E7D728BFE6A89C52BFFAD9CC5"&gt;
+    &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Execute the HTML, and the PayPal mask should be seen in a browser. Enter <a href="../../test/#testDataPayPal" class="page" target="\"_blank\"">specific test data</a> for PayPal payment method. After that, the merchant will be redirected to the <code>successUrl</code> (which is invalid in this example).</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 style-header">
+<h4 id="VERIFYPAYMENT"><a class="anchor" href="#VERIFYPAYMENT"></a><a href="../../commands/transaction/#verifyPayment" class="page" target="\"_blank\"">VERIFYPAYMENT</a></h4>
+<div class="exampleblock flex-block">
+<div class="content">
+<div class="openblock main-block">
+<div class="content">
+<div class="paragraph">
+<p><span class="authorization">Authorizations:</span> Basic Auth</p>
+</div>
+<div class="paragraph">
+<p><span class="main-block-headline">Request</span></p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#merchantkey" class="page" target="\"_blank\"">MERCHANTKEY</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#logpath" class="page" target="\"_blank\"">LOGPATH</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#command" class="page" target="\"_blank\"">COMMAND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#language" class="page" target="\"_blank\"">LANGUAGE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orderNumber" class="page" target="\"_blank\"">ORDERNUMBER</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#APPLICATIONTYPE" class="page" target="\"_blank\"">APPLICATIONTYPE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#PAYMENTNUMBER" class="page" target="\"_blank\"">PAYMENTNUMBER</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#IP_ADDRESS" class="page" target="\"_blank\"">QTILL_CLIENT_IP_ADDRESS</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#ORIGINATOR" class="page" target="\"_blank\"">ORIGINATOR</a></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="main-block-headline">Responses</span></p>
+</div>
+<div class="paragraph">
+<p> <details><summary> 
+<span class="response-ok">201</span> Successful verification.
+ </summary><div> </p>
+</div>
+<table id="responseVERIFYPAYMENT" class="tableblock frame-all grid-all stretch big-screen">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#status" class="page" target="\"_blank\"">status</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orders" class="page" target="\"_blank\"">orders</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#version" class="page" target="\"_blank\"">version</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page" target="\"_blank\"">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page" target="\"_blank\"">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page" target="\"_blank\"">paySysMessage</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#originator" class="page" target="\"_blank\"">originator</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="../../parameters/additional-parameters/#orderBasis" class="page" target="\"_blank\"">Order as a basis</a> type of properties in the response can be returned for this command.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The <a href="../../parameters/additional-parameters/#PAYPALAdditionalParams" class="page" target="\"_blank\"">additional parameters</a> will be returned.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table id="responseVERIFYPAYMENTMobile" class="tableblock frame-all grid-all stretch mobile-screen">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#status" class="page">status</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orders" class="page">orders</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#version" class="page">version</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page">paySysMessage</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#originator" class="page">originator</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="../../parameters/additional-parameters/#orderBasis" class="page">Order as a basis</a> type of properties in the response can be returned for this command.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The <a href="../../parameters/additional-parameters/#PAYPALAdditionalParamsMobile" class="page">additional parameters</a> will be returned.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> </div></details> </p>
+</div>
+<div class="paragraph">
+<p> <details id="error"><summary> 
+<span class="response-error">400</span> Validating the request data failed
+ </summary><div> </p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page" target="\"_blank\"">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page" target="\"_blank\"">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page" target="\"_blank\"">paySysMessage</a></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> </div></details> </p>
+</div>
+</div>
+</div>
+<div class="openblock aside-block">
+<div class="content">
+<div class="paragraph post">
+<p><span class="post">POST</span> / https://api.qenta.com/enterprise<br></p>
+</div>
+<div class="paragraph">
+<p><span class="aside-header">Request samples</span></p>
+</div>
+<div class="listingblock "source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code><span>MERCHANTKEY</span>=<strong>43gADp5.UOZxPTet6O8o8K6o-7RefQB3BO21OMu4chB65LJUI_</strong>&amp;
+<span>COMMAND</span>=<strong>VERIFYPAYMENT</strong>&amp;
+<span>APPLICATIONTYPE</span>=<strong>S</strong>&amp;
+<span>ORDERNUMBER</span>=<strong>65061</strong>&amp;
+<span>LANGUAGE</span>=<strong>en</strong></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="aside-header">Response samples</span></p>
+</div>
+<div class="listingblock source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code><span>order.1.amount</span>=<strong>1.00</strong>&amp;
+<span>payment.1.1.paymentNumber</span>=<strong>65061</strong>&amp;
+<span>payment.1.1.paypalPayerAddressCity</span>=<strong>Graz</strong>&amp;
+<span>payment.1.1.timeModified</span>=<strong>02.11.2022+11%3A56%3A39</strong>&amp;
+<span>payment.1.1.paymentType</span>=<strong>PAYPAL</strong>&amp;
+<span>order.1.merchantNumber</span>=<strong>840</strong>&amp;
+<span>order.1.depositAmount</span>=<strong>1.00</strong>&amp;
+<span>payment.1.1.paypalPayerAddressCountryCode</span>=<strong>AT</strong>&amp;
+<span>payment.1.1.approvalCode</span>=<strong>8AM085001W130254S</strong>&amp;
+<span>payment.1.1.providerReferenceNumber</span>=8AM085001W130254S&amp;
+<span>payment.1.1.paypalPayerAddressName</span>=<strong>QentaXYZ1+QCP+Example</strong>&amp;
+<span>payment.1.1.paypalPayerAddressCountry</span>=<strong>%D6sterreich</strong>&amp;
+<span>payment.1.1.orderNumber</span>=<strong>65061</strong>&amp;
+<span>payment.1.1.paypalPayerAddressStreet1</span>=<strong>Reininghausstrasse+10</strong>&amp;
+<span>order.1.approveAmount</span>=<strong>0</strong>&amp;
+<span>order.1.credits</span>=<strong>0</strong>&amp;
+<span>payment.1.1.merchantNumber</span>=<strong>840</strong>&amp;
+<span>order.1.payments</span>=<strong>1</strong>&amp;
+<span>version</span>=<strong>qtillserver+3.23.0.48</strong>&amp;
+<span>order.1.refundAmount</span>=<strong>0</strong>&amp;
+<span>payment.1.1.currency</span>=<strong>EUR</strong>&amp;
+<span>order.1.state</span>=<strong>ORDERED</strong>&amp;
+<span>payment.1.1.paypalPayerAddressZIP</span>=<strong>8020</strong>&amp;
+<span>orders</span>=<strong>1</strong>&amp;
+<span>payment.1.1.batchNumber</span>=<strong>300000607</strong>&amp;
+<span>order.1.acquirer</span>=<strong>PayPal</strong>&amp;
+<span>order.1.brand</span>=<strong>PayPal</strong>&amp;
+<span>payment.1.1.paypalPayerAddressState</span>=<strong>Graz</strong>&amp;
+<span>status</span>=<strong>0</strong>&amp;
+<span>payment.1.1.paypalBillingAgreementID</span>=B-<strong>5TT20067KS239603K</strong>&amp;
+<span>payment.1.1.depositAmount</span>=<strong>1.00</strong>&amp;
+<span>order.1.orderText</span>=<strong>Test</strong>&amp;
+<span>order.1.contractNumber</span>=<strong>qenta+test</strong>&amp;
+<span>payment.1.1.state</span>=<strong>payment_deposited</strong>&amp;
+<span>order.1.customerStatement</span>=<strong>eh3462t3hg346</strong>&amp;
+<span>order.1.providerContractNumber</span>=<strong>Qenta_Test1</strong>&amp;
+<span>payment.1.1.paypalPayerLastName</span>=<strong>Spintzyk</strong>&amp;
+<span>order.1.timeModified</span>=<strong>02.11.2022+11%3A56%3A39</strong>&amp;
+<span>order.1.orderNumber</span>=<strong>65061</strong>&amp;
+<span>payment.1.1.gatewayReferenceNumber</span>=<strong>bdd2452a746b48e387012b2b67ae4866</strong>&amp; <i class="conum" data-value="1"></i><b>(1)</b>
+<span>payment.1.1.paypalPayerFirstName</span>=<strong>Wirecardbuyer</strong>&amp;
+<span>payment.1.1.approveAmount</span>=<strong>1.00</strong>&amp;
+<span>order.1.currency</span>=<strong>EUR</strong>&amp;
+<span>payment.1.1.paypalPayerEmail</span>=<strong>paypal.buyer2%40wirecard.com</strong>&amp;
+<span>order.1.timeCreated</span>=<strong>02.11.2022+11%3A55%3A18</strong>&amp;
+<span>order.1.orderDescription</span>=<strong>Test</strong>&amp;
+<span>payment.1.1.timeCreated</span>=<strong>02.11.2022+11%3A56%3A39</strong>&amp;
+<span>order.1.paymentType</span>=<strong>PAYPAL</strong></code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Store the PayPal <code>TRANSACTIONID</code> of the payment as returned by the parameter gatewayReferenceNumber.</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_post_transaction_commands"><a class="anchor" href="#_post_transaction_commands"></a><a href="../../commands/post-transaction/" class="page" target="\"_blank\"">Post Transaction Commands</a></h3>
+<div class="sect3 style-header">
+<h4 id="GETORDERDETAILS"><a class="anchor" href="#GETORDERDETAILS"></a><a href="../../commands/post-transaction/#getOrderDetails" class="page" target="\"_blank\"">GETORDERDETAILS</a></h4>
+<div class="exampleblock flex-block">
+<div class="content">
+<div class="openblock main-block">
+<div class="content">
+<div class="paragraph">
+<p><span class="authorization">Authorizations:</span> Basic Auth</p>
+</div>
+<div class="paragraph">
+<p><span class="main-block-headline">Request</span></p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#merchantkey" class="page" target="\"_blank\"">MERCHANTKEY</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#logpath" class="page" target="\"_blank\"">LOGPATH</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#command" class="page" target="\"_blank\"">COMMAND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#language" class="page" target="\"_blank\"">LANGUAGE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orderNumber" class="page" target="\"_blank\"">ORDERNUMBER</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#APPLICATIONTYPE" class="page" target="\"_blank\"">APPLICATIONTYPE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#adminPassword" class="page" target="\"_blank\"">ADMIN_PASSWORD</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#ORIGINATOR" class="page" target="\"_blank\"">ORIGINATOR</a></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="main-block-headline">Responses</span></p>
+</div>
+<div class="paragraph">
+<p> <details><summary> 
+<span class="response-ok">201</span> Successful getting order details.
+ </summary><div> </p>
+</div>
+<table id="responseGETORDERDETAILS" class="tableblock frame-all grid-all stretch big-screen">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#status" class="page" target="\"_blank\"">status</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orders" class="page" target="\"_blank\"">orders</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#version" class="page" target="\"_blank\"">version</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page" target="\"_blank\"">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page" target="\"_blank\"">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page" target="\"_blank\"">paySysMessage</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#originator" class="page" target="\"_blank\"">originator</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="../../parameters/additional-parameters/#orderBasis" class="page" target="\"_blank\"">Order as a basis</a> type of properties in the response can be returned for this command.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The <a href="../../parameters/additional-parameters/#PAYPALAdditionalParams" class="page" target="\"_blank\"">additional parameters</a> will be returned.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<table id="responseGETORDERDETAILSMobile" class="tableblock frame-all grid-all stretch mobile-screen">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#status" class="page">status</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orders" class="page">orders</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#version" class="page">version</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page">paySysMessage</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#originator" class="page">originator</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="../../parameters/additional-parameters/#orderBasis" class="page">Order as a basis</a> type of properties in the response can be returned for this command.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The <a href="../../parameters/additional-parameters/#PAYPALAdditionalParamsMobile" class="page">additional parameters</a> will be returned.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> </div></details> </p>
+</div>
+<div class="paragraph">
+<p> <details id="error"><summary> 
+<span class="response-error">400</span> Validating the request data failed
+ </summary><div> </p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page" target="\"_blank\"">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page" target="\"_blank\"">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page" target="\"_blank\"">paySysMessage</a></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> </div></details> </p>
+</div>
+</div>
+</div>
+<div class="openblock aside-block">
+<div class="content">
+<div class="paragraph post">
+<p><span class="post">POST</span> / https://api.qenta.com/enterprise<br></p>
+</div>
+<div class="paragraph">
+<p><span class="aside-header">Request samples</span></p>
+</div>
+<div class="listingblock source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code><span>MERCHANTKEY</span>=<strong>43gADp5.UOZxPTet6O8o8K6o-7RefQB3BO21OMu4chB65LJUI_</strong>&amp;
+<span>COMMAND</span>=<strong>GETORDERDETAILS</strong>&amp;
+<span>ORDERNUMBER</span>=<strong>65061</strong>&amp;
+<span>ADMIN_PASSWORD</span>=<strong>9p3a0m5f</strong>&amp;
+<span>APPLICATIONTYPE</span>=<strong>S</strong>&amp;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="aside-header">Response samples</span></p>
+</div>
+<div class="listingblock source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code><span>order.1.amount</span>=<strong>1.00</strong>&amp;
+<span>payment.1.1.paymentNumber</span>=<strong>65061</strong>&amp;
+<span>payment.1.1.paypalPayerAddressCity</span>=<strong>Graz</strong>&amp;
+<span>payment.1.1.timeModified</span>=<strong>02.11.2022+11%3A56%3A39</strong>&amp;
+<span>payment.1.1.paymentType</span>=<strong>PAYPAL</strong>&amp;
+<span>order.1.merchantNumber</span>=<strong>840</strong>&amp;
+<span>order.1.depositAmount</span>=<strong>1.00</strong>&amp;
+<span>payment.1.1.paypalPayerAddressCountryCode</span>=<strong>AT</strong>&amp;
+<span>payment.1.1.approvalCode</span>=<strong>8AM085001W130254S</strong>&amp;
+<span>payment.1.1.providerReferenceNumber</span>=<strong>8AM085001W130254S</strong>&amp;
+<span>payment.1.1.paypalPayerAddressName</span>=<strong>QentaXYZ1+QCP+Example</strong>&amp;
+<span>payment.1.1.orderNumber=65061&payment.1.1.paypalPayerAddressCountry</span>=<strong>%D6sterreich</strong>&amp;
+<span>payment.1.1.paypalPayerAddressStreet1</span>=<strong>Reininghausstrasse+10</strong>&amp;
+<span>order.1.approveAmount</span>=<strong>0</strong>&amp;
+<span>order.1.credits</span>=<strong>0</strong>&amp;
+<span>payment.1.1.merchantNumber</span>=<strong>840</strong>&amp;
+<span>order.1.payments</span>=<strong>1</strong>&amp;
+<span>version</span>=<strong>qtillserver+3.23.0.48</strong>&amp;
+<span>order.1.state</span>=<strong>ORDERED</strong>&amp;
+<span>payment.1.1.currency</span>=<strong>EUR</strong>&amp;
+<span>order.1.refundAmount</span>=<strong>0</strong>&amp;
+<span>payment.1.1.paypalPayerAddressZIP</span>=<strong>8020</strong>&amp;
+<span>orders</span>=<strong>1</strong>&amp;
+<span>order.1.brand</span>=<strong>PayPal</strong>&amp;
+<span>order.1.acquirer</span>=<strong>PayPal</strong>&amp;
+<span>payment.1.1.batchNumber</span>=<strong>300000607</strong>&amp;
+<span>payment.1.1.paypalPayerAddressState</span>=<strong>Graz</strong>&amp;
+<span>status</span>=<strong>0</strong>&amp;
+<span>payment.1.1.paypalBillingAgreementID</span>=<strong>B-5TT20067KS239603K</strong>&amp;
+<span>payment.1.1.depositAmount</span>=<strong>1.00</strong>&amp;
+<span>order.1.orderText</span>=<strong>Test</strong>&amp;
+<span>order.1.contractNumber</span>=<strong>qenta+test</strong>&amp;
+<span>payment.1.1.state</span>=<strong>payment_deposited</strong>&amp;
+<span>order.1.customerStatement</span>=<strong>eh3462t3hg346</strong>&amp;
+<span>order.1.providerContractNumber</span>=<strong>Qenta_Test1</strong>&amp;
+<span>payment.1.1.paypalPayerLastName</span>=<strong>Spintzyk</strong>&amp;
+<span>order.1.orderNumber</span>=<strong>65061</strong>&amp;
+<span>order.1.timeModified</span>=<strong>02.11.2022+11%3A56%3A39</strong>&amp;
+<span>payment.1.1.gatewayReferenceNumber</span>=<strong>bdd2452a746b48e387012b2b67ae4866</strong>&amp;
+<span>objectsTotal</span>=<strong>1</strong>&amp;
+<span>payment.1.1.approveAmount</span>=<strong>1.00</strong>&amp;
+<span>payment.1.1.paypalPayerFirstName</span>=<strong>Wirecardbuyer</strong>&amp;
+<span>order.1.currency</span>=<strong>EUR</strong>&amp;
+<span>payment.1.1.paypalPayerEmail</span>=<strong>paypal.buyer2%40wirecard.com</strong>&amp;
+<span>order.1.timeCreated</span>=<strong>02.11.2022+11%3A55%3A18</strong>&amp;
+<span>order.1.orderDescription</span>=<strong>Test</strong>&amp;
+<span>payment.1.1.timeCreated</span>=<strong>02.11.2022+11%3A56%3A39</strong>&amp;
+<span>order.1.paymentType</span>=<strong>PAYPAL</strong></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 style-header">
+<h4 id="DEPOSIT"><a class="anchor" href="#DEPOSIT"></a><a href="../../commands/post-transaction/#deposit" class="page" target="\"_blank\"">DEPOSIT</a></h4>
+<div class="paragraph">
+<p>PayPal transactions are by default set to be approved and deposited in one step, but it can be split it up into a two-step process. That allows distinguishing between approved and deposited payments and performing certain actions for each of them.</p>
+</div>
+<div class="paragraph">
+<p>To separate the transaction flow into authorization and capture, get in contact with the <a href="../../contact/#supportTeam" class="page" target="\"_blank\"">integration specialists</a>. Look at the <a href="#twoStepTransaction">order flow diagram</a> of the payment method for closer information.</p>
+</div>
+<div class="paragraph">
+<p>The transaction is automatically deposited by using the command <a href="#INITIATEPAYMENT">INITIATEPAYMENT</a>, in this case, the command DEPOSIT isn&#8217;t used. Look at the <a href="#oneStepTransaction">order flow diagram</a> of the payment method for closer information.</p>
+</div>
+</div>
+<div class="sect3 style-header">
+<h4 id="APPROVEREVERSAL"><a class="anchor" href="#APPROVEREVERSAL"></a><a href="../../commands/post-transaction/#approveReversal" class="page" target="\"_blank\"">APPROVEREVERSAL</a></h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For using the command <a href="#APPROVEREVERSAL">APPROVEREVERSAL</a>, payment needs to be in an <strong>approved state</strong>. Look at the <a href="#twoStepTransaction">order flow diagram</a> of the payment method for closer information.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+By default, a Paypal payment is automatically captured with the full amount. If want to separate the transaction flow into authorization and capture, get in contact with the <a href="../../contact/#supportTeam" class="page" target="\"_blank\"">integration specialists</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3 style-header">
+<h4 id="RECURPAYMENT"><a class="anchor" href="#RECURPAYMENT"></a><a href="../../commands/post-transaction/#recurPayment" class="page" target="\"_blank\"">RECURPAYMENT</a></h4>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+The parameter <a href="../../parameters/detailed-description/#TRANSACTION_IDENTIFIER" class="page" target="\"_blank\"">TRANSACTION_IDENTIFIER</a> must be set to <code>INITIAL</code> with the command <a href="#INITIATEPAYMENT">INITIATEPAYMENT</a> to flag it as a transaction to recur at a later point.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For using the command <a href="#RECURPAYMENT">RECURPAYMENT</a> a request approval is needed, so contact <a href="https://www.paypal.com/ba/home" target="\"_blank\"">PayPal Customer Support</a> or the PayPal account representative. After receiving approval from PayPal also contact our <a href="../../contact/#supportTeam" class="page" target="\"_blank\"">integration specialists</a> to enable this feature.</p>
+</div>
+<div id="recurPaymentLinkBig" class="paragraph">
+<p>If the parameter <a href="../../parameters/additional-parameters/#CONSUMER_SHIPPING_COUNTRY" class="page" target="\"_blank\"">CONSUMER_SHIPPING_COUNTRY</a> is set, PayPal will display its own pages in the language of that country; otherwise, PayPal will use the language configured within the web browser of the consumer.</p>
+</div>
+<div id="recurPaymentLinkMobile" class="paragraph">
+<p>If the parameter <a href="../../parameters/additional-parameters/#CONSUMER_SHIPPING_COUNTRYMobile" class="page">CONSUMER_SHIPPING_COUNTRY</a> is set, PayPal will display its own pages in the language of that country; otherwise, PayPal will use the language configured within the web browser of the consumer.</p>
+</div>
+<div class="paragraph">
+<p>If no shipping address is entered e.g. only digital goods are sold and there is no shipping then the respective parameter is <code>NOSHIPPING=1</code>. To prevent the consumer in the online shop from editing the shipping address then the respective parameter is <code>ADDROVERRIDE=1</code>.
+The merchant configuration has to be changed by our <a href="../../contact/#qtill/supportTeam" class="page" target="\"_blank\"">integration specialists</a>.</p>
+</div>
+<div class="exampleblock flex-block">
+<div class="content">
+<div class="openblock main-block">
+<div class="content">
+<div class="paragraph">
+<p><span class="authorization">Authorizations:</span> Basic Auth</p>
+</div>
+<div class="paragraph">
+<p><span class="main-block-headline">Request</span></p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#merchantkey" class="page" target="\"_blank\"">MERCHANTKEY</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#logpath" class="page" target="\"_blank\"">LOGPATH</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#command" class="page" target="\"_blank\"">COMMAND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#language" class="page" target="\"_blank\"">LANGUAGE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orderNumber" class="page" target="\"_blank\"">ORDERNUMBER</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#APPLICATIONTYPE" class="page" target="\"_blank\"">APPLICATIONTYPE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#SOURCEORDERNUMBER" class="page" target="\"_blank\"">SOURCEORDERNUMBER</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#depositamount" class="page" target="\"_blank\"">DEPOSITAMOUNT</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#currency" class="page" target="\"_blank\"">CURRENCY</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#customerStatement" class="page" target="\"_blank\"">CUSTOMERSTATEMENT</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#amount" class="page" target="\"_blank\"">AMOUNT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#ORIGINATOR" class="page" target="\"_blank\"">ORIGINATOR</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#adminPassword" class="page" target="\"_blank\"">ADMIN_PASSWORD</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orderDescription" class="page" target="\"_blank\"">ORDERDESCRIPTION</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="main-block-headline">Responses</span></p>
+</div>
+<div class="paragraph">
+<p> <details><summary> 
+<span class="response-ok">201</span> Successful approving reversal.
+ </summary><div> </p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<caption class="title">Table 3. Response Parameters</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#status" class="page" target="\"_blank\"">status</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orders" class="page" target="\"_blank\"">orders</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#version" class="page" target="\"_blank\"">version</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page" target="\"_blank\"">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page" target="\"_blank\"">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page" target="\"_blank\"">paySysMessage</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#originator" class="page" target="\"_blank\"">originator</a></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> </div></details> </p>
+</div>
+<div class="paragraph">
+<p> <details id="error"><summary> 
+<span class="response-error">400</span> Validating the request data failed
+ </summary><div> </p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page" target="\"_blank\"">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page" target="\"_blank\"">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page" target="\"_blank\"">paySysMessage</a></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> </div></details> </p>
+</div>
+</div>
+</div>
+<div class="openblock aside-block">
+<div class="content">
+<div class="paragraph post">
+<p><span class="post">POST</span> / https://api.qenta.com/enterprise<br></p>
+</div>
+<div class="paragraph">
+<p><span class="aside-header">Request samples</span></p>
+</div>
+<div class="listingblock "source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code><span>COMMAND</span>=<strong>RECURPAYMENT</strong>&amp;
+<span>MERCHANTKEY</span>=<strong>43gADp5.UOZxPTet6O8o8K6o-7RefQB3BO21OMu4chB65LJUI_</strong>&amp;
+<span>ORDERNUMBER</span>=<strong>4196405</strong>&amp;
+<span>SOURCEORDERNUMBER</span>=<strong>65061</strong>&amp;
+<span>AMOUNT</span>=<strong>1</strong>&amp;
+<span>CURRENCY</span>=<strong>EUR</strong>&amp;
+<span>ORDERDESCRIPTION</span>=<strong>Test:0000</strong>&amp;
+<span>ADMIN_PASSWORD</span>=<strong>9p3a0m5f</strong>&amp;
+<span>APPLICATIONTYPE</span>=<strong>S</strong>&amp;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="aside-header">Response samples</span></p>
+</div>
+<div class="listingblock source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code><span>version</span>=<strong>qtillserver+3.23.0.48</strong>&amp;
+<span>status</span>=<strong>0</strong></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect3 style-header">
+<h4 id="REFUND"><a class="anchor" href="#REFUND"></a><a href="../../commands/post-transaction/#refund" class="page" target="\"_blank\"">REFUND</a></h4>
+<div class="exampleblock flex-block">
+<div class="content">
+<div class="openblock main-block">
+<div class="content">
+<div class="paragraph">
+<p><span class="authorization">Authorizations:</span> Basic Auth</p>
+</div>
+<div class="paragraph">
+<p><span class="main-block-headline">Request</span></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#merchantkey" class="page" target="\"_blank\"">MERCHANTKEY</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#logpath" class="page" target="\"_blank\"">LOGPATH</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#command" class="page" target="\"_blank\"">COMMAND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#language" class="page" target="\"_blank\"">LANGUAGE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orderNumber" class="page" target="\"_blank\"">ORDERNUMBER</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#APPLICATIONTYPE" class="page" target="\"_blank\"">APPLICATIONTYPE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#amount" class="page" target="\"_blank\"">AMOUNT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#CREDITNUMBER" class="page" target="\"_blank\"">CREDITNUMBER</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#adminPassword" class="page" target="\"_blank\"">ADMIN_PASSWORD</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#currency" class="page" target="\"_blank\"">CURRENCY</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#MERCHANTREFERENCE" class="page" target="\"_blank\"">MERCHANTREFERENCE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#customerStatement" class="page" target="\"_blank\"">CUSTOMERSTATEMENT</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#ISO_TRANSACTION_TYPE" class="page" target="\"_blank\"">ISO_TRANSACTION_TYPE</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#ORIGINATOR" class="page" target="\"_blank\"">ORIGINATOR</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For refunds, <a href="../../parameters/additional-parameters/#optionalBasketItemParameters" class="page" target="\"_blank\"">basket item data</a> are additional optional parameters.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><span class="main-block-headline">Responses</span></p>
+</div>
+<div class="paragraph">
+<p> <details><summary> 
+<span class="response-ok">201</span> Successful refunding.
+ </summary><div> </p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Required Parameters</th>
+<th class="tableblock halign-left valign-top">Optional Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#status" class="page" target="\"_blank\"">status</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#orders" class="page" target="\"_blank\"">orders</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#version" class="page" target="\"_blank\"">version</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page" target="\"_blank\"">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page" target="\"_blank\"">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page" target="\"_blank\"">paySysMessage</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#originator" class="page" target="\"_blank\"">originator</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#creditNumber" class="page" target="\"_blank\"">creditNumber</a></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> </div></details> </p>
+</div>
+<div class="paragraph">
+<p> <details id="error"><summary> 
+<span class="response-error">400</span> Validating the request data failed
+ </summary><div> </p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 85%;">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#errorCode" class="page" target="\"_blank\"">errorCode</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#message" class="page" target="\"_blank\"">message</a></code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../../parameters/detailed-description/#paySysMessage" class="page" target="\"_blank\"">paySysMessage</a></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p> </div></details> </p>
+</div>
+</div>
+</div>
+<div class="openblock aside-block">
+<div class="content">
+<div class="paragraph post">
+<p><span class="post">POST</span> / https://api.qenta.com/enterprise<br></p>
+</div>
+<div class="paragraph">
+<p><span class="aside-header">Request samples</span></p>
+</div>
+<div class="listingblock "source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code><span>MERCHANTKEY</span>=<strong>43gADp5.UOZxPTet6O8o8K6o-7RefQB3BO21OMu4chB65LJUI_</strong>&amp;
+<span>COMMAND</span>=<strong>REFUND</strong>&amp;
+<span>ORDERNUMBER</span>=<strong>65061</strong>&amp;
+<span>CURRENCY</span>=<strong>EUR</strong>&amp;
+<span>AMOUNT</span>=<strong>1.00</strong>&amp;
+<span>ADMIN_PASSWORD</span>=<strong>9p3a0m5f</strong>&amp;
+<span>APPLICATIONTYPE</span>=<strong>S</strong>&amp;
+<span>LANGUAGE</span>=<strong>en</strong></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="aside-header">Response samples</span></p>
+</div>
+<div class="listingblock source_10">
+<div class="content">
+<pre class="highlightjs highlight"><code><span>creditNumber</span>=<strong>14394755</strong>&amp;
+<span>version</span>=<strong>qtillserver+3.23.0.48</strong>&amp;
+<span>status</span>=<strong>0</strong></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_query_commands"><a class="anchor" href="#_query_commands"></a><a href="../../commands/query/" class="page" target="\"_blank\"">Query Commands</a></h3>
+<div class="paragraph">
+<p>For every payment method commands <a href="../../commands/query/#queryOrders" class="page" target="\"_blank\"">QUERYORDERS</a>, <a href="../../commands/query/#queryCredits" class="page" target="\"_blank\"">QUERYCREDITS</a>, and <a href="../../commands/query/#queryBatches" class="page" target="\"_blank\"">QUERYBATCHES</a> are used.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="orderFlowDiagram"><a class="anchor" href="#orderFlowDiagram"></a>Order Flow Diagram</h2>
+<div class="sectionbody">
+<div class="exampleblock flex-block">
+<div class="content">
+<div class="openblock diagram-main-block">
+<div class="content">
+<div id="oneStepTransaction" class="paragraph">
+<p><a href="../../glossary/#oneStepTransaction" class="page" target="\"_blank\"">One Step Transaction (default)</a></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/_images/payment-methods/paypal-one-step-transaction.png" alt="Image" width="800">
+</div>
+</div>
+</div>
+</div>
+<div class="openblock diagram-aside-block">
+<div class="content">
+<div id="twoStepTransaction" class="paragraph">
+<p><a href="../../glossary/#twoStepTransaction" class="page" target="\"_blank\"">Two Step Transaction</a></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Contact our <a href="../../contact/#supportTeam" class="page">integration specialists</a> to enable this workflow.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/_images/payment-methods/paypal-two-step-transaction.png" alt="Image" width="1000">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>To interpret this diagram, the successful completion of a NEW PAYMENT is assumed. Starting from this command it&#8217;s possible to carry out different commands.</p>
+</div>
+<div id="bigscreenLink" class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For an explanation of the different status descriptions included in this diagram have a look at <code><a href="../../parameters/additional-parameters/#payment.state" class="page" target="\"_blank\"">payment.&lt;n&gt;.&lt;m&gt;.state</a></code>, <code><a href="../../parameters/additional-parameters/#order.state" class="page" target="\"_blank\"">order.&lt;n&gt;.state</a></code>, and <code><a href="../../parameters/additional-parameters/#credit.state" class="page" target="\"_blank\"">credit.&lt;n&gt;.state</a></code> which are response parameters of command <a href="#GETORDERDETAILS">GETORDERDETAILS</a>.
+</td>
+</tr>
+</table>
+</div>
+<div id="mobileLink" class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+For an explanation of the different status descriptions included in this diagram have a look at <code><a href="../../parameters/additional-parameters/#payment.stateMobile" class="page">payment.&lt;n&gt;.&lt;m&gt;.state</a></code>, <code><a href="../../parameters/additional-parameters/#order.stateMobile" class="page">order.&lt;n&gt;.state</a></code>, and <code><a href="../../parameters/additional-parameters/#credit.stateMobile" class="page">credit.&lt;n&gt;.state</a></code> which are response parameters of command <a href="#GETORDERDETAILS">GETORDERDETAILS</a>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>All possible commands for specific acquirers are found <a href="../../command-by-payment-method/#commandsByPaymentMethod" class="page" target="\"_blank\"">here</a>.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt="" uk-img=""
+                src="https://payments.qenta.com/wp-content/uploads/2022/06/RZ-Logo-QENTA-CMYK-invertiert-2.svg" width="120"></a>
+          </div> 
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2023 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://payments.qenta.com/">COMPANY</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://payments.qenta.com/en/merchant-login/">MERCHANT LOGIN</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://payments.qenta.com/en/payment-solutions/">SOLUTIONS</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://payments.qenta.com/en/contact/">CONTACT</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://guides.qenta.com" target="_blank">ONLINE GUIDES</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://payments.qenta.com/en/download-center/">DOWNLOAD CENTER</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://payments.qenta.com/en/imprint/">IMPRINT</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://guides.qenta.com/protection-personal-data/data-protection-en/">DATA PROTECTION</a>
+              </li> 
+              <li class="el-item">
+                <a class="el-link" href="https://payments.qenta.com/en/terms-and-conditions/">T&C</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../../.." data-page-path="/online-guides/main/qtill/payment-methods/paypal/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/dark-light-theme.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>

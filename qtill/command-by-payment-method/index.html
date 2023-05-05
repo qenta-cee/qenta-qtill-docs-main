@@ -1,0 +1,2345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Commands by Payment Method :: QENTA Online Guides</title>
+    <link rel="canonical" href="https://guides.qenta.com/online-guides/main/qtill/command-by-payment-method/">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="/_/css/site.css">
+<link rel="stylesheet" href="/_/css/search.css">
+<link rel="stylesheet" href="/_/css/qenta.css">
+<link rel="stylesheet" href="https://use.typekit.net/ucf2gvc.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"></link>
+<link rel="stylesheet" href="/_/css/tables.css">
+<link rel="stylesheet" href="/_/css/tabs.css">
+<link rel="stylesheet" href="/_/css/extra.css">
+    <script>var uiRootPath = '/_'</script>
+    <link rel="icon" href="/_/img/Favicon-QENTA-RGB.png" type="image/png">
+  </head>
+  <body class="article">
+<header class="header" role="banner">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://guides.qenta.com">QENTA Online Guides</a>
+        <div class="navbar-item search-item">
+          <input id="search-input" type="text" placeholder="Search">
+        </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://guides.qenta.com/">Home</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://payments.qenta.com/">Enterprise</a>
+        </div>
+        <div class="navbar-item is-hoverable">
+          <a class="navbar-link" href="https://payments.qenta.com/haendler-login/">Merchant Login</a>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://guides.qenta.com/contact/">Contact</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="online-guides" data-version="main">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../">QTILL Checkout Enterprise</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/">Payment Methods</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/credit-card/">Credit Card</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/3DS/">3D Secure/Recurring</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/3DS/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/3DS/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/3DS/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/3DS/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/3DS/#DEPOSITREVERSAL"><mark>POST</mark> DepositReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/3DS/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/3DS/#RECURPAYMENT"><mark>POST</mark> RecurPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/3DS/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/3DS/#REFUNDREVERSAL"><mark>POST</mark> RefundReversal</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/credit-card-mail-order/">Mail Order and Telephone Order</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/credit-card-mail-order/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/credit-card-mail-order/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/credit-card-mail-order/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/credit-card-mail-order/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/credit-card-mail-order/#DEPOSITREVERSAL"><mark>POST</mark> DepositReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/credit-card-mail-order/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/credit-card-mail-order/#RECURPAYMENT"><mark>POST</mark> RecurPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/credit-card-mail-order/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/credit-card-mail-order/#REFUNDREVERSAL"><mark>POST</mark> RefundReversal</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/eps-giropay/">EPS/Giropay</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/eps-giropay/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/eps-giropay/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/eps-giropay/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/eps-giropay/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/eps-giropay/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/payolution/">Payolution</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/payolution/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/payolution/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/payolution/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/payolution/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/payolution/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/payolution/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/paypal/">PayPal</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paypal/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paypal/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paypal/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paypal/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paypal/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paypal/#RECURPAYMENT"><mark>POST</mark> RecurPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paypal/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/setup-3rdparty-permission/">3rd Party Permissions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/paysafecard/">Paysafecard</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paysafecard/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paysafecard/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paysafecard/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/paysafecard/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/circlek/">Circle K</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/cvs/">CVS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/dollar-general/">Dollar General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/obucks/">oBucks</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/pagoefectivo/">PagoEfectivo</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/safetypay/">Safetypay</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../payment-methods/p24/">P24</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/riverty/">Riverty</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/riverty-invoice/">Riverty Invoice</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-invoice/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-invoice/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-invoice/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-invoice/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-invoice/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-invoice/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/riverty-installment/">Riverty Installment</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-installment/#GETINSTALLMENTPLANS"><mark>POST</mark> GetInstallmentPlans</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-installment/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-installment/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-installment/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-installment/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-installment/#APPROVEREVERSAL"><mark>POST</mark> AproveReversal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../payment-methods/riverty-installment/#REFUND"><mark>POST</mark> Refund</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/sepa/">SEPA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sepa/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sepa/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sepa/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sepa/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sepa/#DEPOSITREVERSAL"><mark>POST</mark> DepositReversal</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sepa/#RECURPAYMENT"><mark>POST</mark> RecurPayment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../payment-methods/sofort/">Sofort.</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sofort/#INITIATEPAYMENT"><mark>POST</mark> InitiatePayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sofort/#VERIFYPAYMENT"><mark>POST</mark> VerifyPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sofort/#GETORDERDETAILS"><mark>POST</mark> GetOrderDetails</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sofort/#DEPOSIT"><mark>POST</mark> Deposit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/sofort/#RECURPAYMENT"><mark>POST</mark> RecurPayment</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../payment-methods/registering-sofort/">Registering/Setting up</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../commands/">Commands</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../commands/pre-transaction/">Pre Transaction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../commands/pre-transaction/#ping"><mark>POST</mark> Ping</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../commands/pre-transaction/#generateOrderNumber"><mark>POST</mark> CreateOrder</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../commands/transaction/">Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../commands/post-transaction/">Post Transaction</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../commands/query/">Query</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../commands/query/#queryOrders"><mark>POST</mark> Query Orders</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../commands/query/#queryCredits"><mark>POST</mark> Query Credits</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../commands/query/#queryBatches"><mark>POST</mark> Query Batches</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="./">Commands by Payment Method</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Parameters</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../parameters/detailed-description/">Detailed Description</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../parameters/detailed-description/#requestParams">Request Parameters</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#ACCEPT_HEADERS">ACCEPT_HEADERS</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#ACCOUNTID">ACCOUNTID</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#ACCOUNT_TYPE">ACCOUNT_TYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#adminPassword">ADMIN_PASSWORD</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#amount">AMOUNT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#APPLICATIONTYPE">APPLICATIONTYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#BATCHNUMBER">BATCHNUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#BANK_BIC">BANK_BIC</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#BANK_ACCOUNT_IBAN">BANK_ACCOUNT_IBAN</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#BRAND">BRAND</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#cancelUrl">CANCELURL</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#CARDHOLDERNAME">CARDHOLDERNAME</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#CARDVERIFYCODE">CARDVERIFYCODE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#command">COMMAND</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#confirmUrl">CONFIRMURL</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#CREATEBEGINTIME">CREATEBEGINTIME</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#CREATEENDTIME">CREATEENDTIME</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#CREDITOR_ID">CREDITOR_ID</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#CREDITNUMBER">CREDITNUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#currency">CURRENCY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#CONSUMER_PLAN_NUMBER">CONSUMER_PLAN_NUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#customerStatement">CUSTOMERSTATEMENT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#CONSUMER_MERCHANT_CRM_ID">CONSUMER_MERCHANT_CRM_ID</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#depositamount">DEPOSITAMOUNT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#DEPOSITFLAG">DEPOSITFLAG</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#DUE_DATE">DUE_DATE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#EXPIRY">EXPIRY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#failureUrl">FAILUREURL</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#FALLBACK">FALLBACK</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#FOR">FOR</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#INITTYPE">INITTYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#IP_ADDRESS">IP_ADDRESS</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#IS_RECURRING_TRANSACTION">IS_RECURRING_TRANSACTION</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#ISSUE_DATE">ISSUE_DATE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#ISSUE_NUMBER">ISSUE_NUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#ISO_TRANSACTION_TYPE">ISO_TRANSACTION_TYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#language">LANGUAGE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#logpath">LOGPATH</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#mandateId">MANDATE_ID</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#mandateSignatureDate">MANDATE_SIGNATURE_DATE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#MAXAMOUNT">MAXAMOUNT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#MAXTIMEOPENED">MAXTIMEOPENED</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#MAXTIMECLOSED">MAXTIMECLOSED</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#merchantkey">MERCHANTKEY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#MERCHANTREFERENCE">MERCHANTREFERENCE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#MERCHANT_TOKENIZATION_FLAG">MERCHANT_TOKENIZATION_FLAG</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#MINAMOUNT">MINAMOUNT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#MINTIMEOPENED">MINTIMEOPENED</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#MINTIMECLOSED">MINTIMECLOSED</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#MODIFYBEGINTIME">MODIFYBEGINTIME</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#MODIFYENDTIME">MODIFYENDTIME</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#ORDERBY">ORDERBY</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#orderDescription">ORDERDESCRIPTION</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#ORDERNUMBER">ORDERNUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#orderReference">ORDERREFERENCE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#ORDERTEXT">ORDERTEXT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#ORIGINATOR">ORIGINATOR</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#OVERWRITE_WAKEUPMESSAGE">OVERWRITE_WAKEUPMESSAGE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#PAN">PAN</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#PAYMENTNUMBER">PAYMENTNUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#paymentType">PAYMENTTYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#PERIODIC_TYPE">PERIODIC_TYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#REFERENCENUMBER">REFERENCENUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#RETURNATMOST">RETURNATMOST</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#serviceUrl">SERVICEURL</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#SKIPFIRST">SKIPFIRST</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#SOURCEORDERNUMBER">SOURCEORDERNUMBER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#STATE">STATE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#successUrl">SUCCESSURL</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#TRANSACTION_IDENTIFIER">TRANSACTION_IDENTIFIER</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#TRANSACTION_TYPE">TRANSACTION_TYPE</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#USER_AGENT">USER_AGENT</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#WAKEUPMESSAGE_METHOD">WAKEUPMESSAGE_METHOD</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#windowName">WINDOWNAME</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../parameters/detailed-description/#responseParams">Response Parameters</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#batches">batches</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#body">body</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#creditNumber">creditNumber</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#credits">credits</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#errorCode">errorCode</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#header">header</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#message">message</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#objectsTotal">objectsTotal</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#orders">orders</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#originator">originator</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#paySysMessage">paySysMessage</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#status">status</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/detailed-description/#version">version</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../parameters/additional-parameters/">Additional Parameters</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../parameters/additional-parameters/#customerParameters">Customer Parameters</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/additional-parameters/#consumerData">Consumer Data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/additional-parameters/#customerBillingData">Consumer Billing Data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/additional-parameters/#customerShippingData">Consumer Shipping Data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/additional-parameters/#customerBrowserData">Consumer Browser Data</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/additional-parameters/#optionalBasketItemParameters">Basket Items Data</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../parameters/additional-parameters/#browserParams">Browser Parameters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../parameters/additional-parameters/#optionalRecipientParams">Recipient Parameters</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../parameters/additional-parameters/#objectPropertiesResponse">Object Properties in the Response</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/additional-parameters/#orderBasis">Orders as a Basis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/additional-parameters/#creditNotesBasis">Credit Notes as a Basis</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../parameters/additional-parameters/#dailyClosisBasis">Daily Closing as a Basis</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../errors/">Error Codes</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../test/">Test</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../test/#testDataCreditCard">Credit Card</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../test/#testDataEPSGiropay">EPS/Giropay</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../test/#testDataPayPal">PayPal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../test/#testDataPaysafecard">Paysafecard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../test/#testDataSofort">Sofort</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../test/#testDataSepa">SEPA</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../logos/">Logos</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../glossary/">Glossary</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../glossary/#A">A</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../glossary/#B">B</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../glossary/#C">C</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../glossary/#F">F</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../glossary/#I">I</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../glossary/#M">M</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../glossary/#O">O</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../glossary/#P">P</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../glossary/#S">S</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../glossary/#T">T</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../contact/">Contact</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">QTILL Checkout Enterprise</span>
+    <span class="version">main</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../../">QTILL Checkout Enterprise</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../">main</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../">QTILL Checkout Enterprise</a></li>
+    <li><a href="../commands/">Commands</a></li>
+    <li><a href="./">Commands by Payment Method</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Commands by Payment Method</h1>
+<div class="sect1">
+<h2 id="commandsByPaymentMethod"><a class="anchor" href="#commandsByPaymentMethod"></a>Commands by Payment Method</h2>
+<div class="sectionbody">
+<table id="transactionBasedOperationsByPayment" class="tableblock frame-all grid-all stretch big-screen">
+<caption class="title">Table 1. Commands by Payment Method</caption>
+<colgroup>
+<col style="width: 13.7931%;">
+<col style="width: 13.7931%;">
+<col style="width: 10.3448%;">
+<col style="width: 10.3448%;">
+<col style="width: 10.3448%;">
+<col style="width: 10.3448%;">
+<col style="width: 10.3448%;">
+<col style="width: 10.3448%;">
+<col style="width: 10.345%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>Payment Method</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong><a href="../commands/post-transaction/#approveReversal" class="page">APPROVE<br>
+REVERSAL</a></strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSIT<br>
+REVERSAL</a></strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDER<br>
+DETAILS</a></strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong><a href="../commands/post-transaction/#recurPayment" class="page">RECUR<br>
+PAYMENT</a></strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong><a href="../commands/post-transaction/#refund" class="page">REFUND</a></strong></p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock"><strong><a href="../commands/post-transaction/#refundReversal" class="page">REFUND<br>
+REVERSAL</a></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock"><a href="../payment-methods/riverty/" class="page">Riverty</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/riverty-invoice/" class="page">Riverty<br>
+(Invoice)</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnote" id="_footnote_first">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup><sup class="footnote" id="_footnote_second">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/riverty-installment/" class="page">Riverty (Installment)</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup><sup class="footnoteref">[<a class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/circlek/" class="page">CircleK</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Paysafe Group</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/cvs/" class="page">CVS</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Paysafe Group</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="12"><p class="tableblock"><a href="../payment-methods/credit-card/" class="page">Credit Card</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">card complete</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnote" id="_footnote_third">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Emerchantpay</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Hobex</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnote" id="_footnote_fourth">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Payone (SIX AT/Paylife)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnote" id="_footnote_fifth">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Payone (B+S)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Worldline (SIX EU)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Wordline</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">SIX CH</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Concardis</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Diners</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Amex</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">First Cash Solution</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/dollar-general/" class="page">Dollar General</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Paysafe Group</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/eps-giropay/" class="page">EPS/Giropay</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The local bank</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Invoice (by <a href="../payment-methods/payolution/" class="page">Payolution</a>)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Payolution (by Unzer)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/obucks/" class="page">oBucks</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Paysafe Group</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/paypal/" class="page">PayPal</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Paypal</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnote" id="_footnote_sixth">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup><sup class="footnoteref">[<a class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/paysafecard/" class="page">Paysafecard</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Paysafe Group</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/pagoefectivo/" class="page">PagoEfectivo</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Paysafe Group</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/p24/" class="page">Przelewy24</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">The local bank</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/safetypay/" class="page">Safetypay</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Paysafe Group</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-middle" rowspan="2"><p class="tableblock"><a href="../payment-methods/sepa/" class="page">SEPA</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a id="Hobex"></a>Hobex</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">b4payment/<br>
+SEPA Express</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><a href="../payment-methods/sofort/" class="page">Sofort</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Klarna</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">✔<sup class="footnote" id="_footnote_seventh">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="transactionBasedOperationsCreditCardMobile"><a class="anchor" href="#transactionBasedOperationsCreditCardMobile"></a><a href="../payment-methods/credit-card/" class="page">Credit Card</a></h3>
+<table id="transactionBasedOperationsCreditCard" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Acquirer</th>
+<th class="tableblock halign-center valign-top" colspan="2">card complete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Emerchantpay</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#backend/transaction-based.adoc#approveReversal" class="page unresolved">approve Reversal</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#backend/transaction-based.adoc#deposit" class="page unresolved">deposit</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#backend/transaction-based.adoc#depositReversal" class="page unresolved">deposit Reversal</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#backend/transaction-based.adoc#getOrderDetails" class="page unresolved">getOrder Details</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#backend/transaction-based.adoc#recurPayment" class="page unresolved">recur Payment</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#backend/transaction-based.adoc#refund" class="page unresolved">refund</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="#backend/transaction-based.adoc#refundReversal" class="page unresolved">refund Reversal</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Hobex</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Payone (SIX AT/Paylife)</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Payone (B+S)</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Worldline (SIX EU)</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Wordline</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>SIX CH</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Concardis</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Diners</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Amex</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>First Cash Solution</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="transactionBasedOperationsEPSMobile"><a class="anchor" href="#transactionBasedOperationsEPSMobile"></a><a href="../payment-methods/eps-giropay/" class="page">EPS/Giropay</a></h3>
+<table id="transactionBasedOperationsEPS" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Acquirer</th>
+<th class="tableblock halign-center valign-top" colspan="2">The local bank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="transactionBasedOperationsPayolutionMobile"><a class="anchor" href="#transactionBasedOperationsPayolutionMobile"></a>Invoice (by <a href="../payment-methods/payolution/" class="page">Payolution</a>)</h3>
+<table id="transactionBasedOperationsPayolution" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Acquirer</th>
+<th class="tableblock halign-center valign-top" colspan="2">Payolution (by Unzer)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="transactionBasedOperationsPayPalMobile"><a class="anchor" href="#transactionBasedOperationsPayPalMobile"></a><a href="../payment-methods/paypal/" class="page">PayPal</a></h3>
+<table id="transactionBasedOperationsPayPal" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Acquirer</th>
+<th class="tableblock halign-center valign-top" colspan="2">Paypal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup><sup class="footnoteref">[<a class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="transactionBasedOperationsPaysafecardMobile"><a class="anchor" href="#transactionBasedOperationsPaysafecardMobile"></a><a href="../payment-methods/paysafecard/" class="page">Paysafecard</a></h3>
+<table id="transactionBasedOperationsPaysafecard" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payment Method</strong></p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock"><strong><a href="../payment-methods/paysafecard/" class="page">Paysafecard</a></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquirer</p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">Paysafe Group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payment Method</strong></p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock"><strong><a href="../payment-methods/circlek/" class="page">CircleK</a></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquirer</p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">Paysafe Group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payment Method</strong></p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock"><strong><a href="../payment-methods/cvs/" class="page">CVS</a></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquirer</p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">Paysafe Group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payment Method</strong></p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock"><strong><a href="../payment-methods/dollar-general/" class="page">Dollar General</a></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquirer</p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">Paysafe Group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payment Method</strong></p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock"><strong><a href="../payment-methods/obucks/" class="page">oBucks</a></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquirer</p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">Paysafe Group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payment Method</strong></p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock"><strong><a href="../payment-methods/pagoefectivo/" class="page">PagoEfectivo</a></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquirer</p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">Paysafe Group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Payment Method</strong></p></td>
+<td class="tableblock halign-center valign-middle" colspan="2"><p class="tableblock"><strong><a href="../payment-methods/safetypay/" class="page">Safetypay</a></strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquirer</p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock">Paysafe Group</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="transactionBasedOperationsPrzelewy24Mobile"><a class="anchor" href="#transactionBasedOperationsPrzelewy24Mobile"></a><a href="../payment-methods/p24/" class="page">Przelewy24</a></h3>
+<table id="transactionBasedOperationsPrzelewy24" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Acquirer</th>
+<th class="tableblock halign-center valign-top" colspan="2">The local bank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="transactionBasedOperationsRiverityMobile"><a class="anchor" href="#transactionBasedOperationsRiverityMobile"></a><a href="../payment-methods/riverty/" class="page">Riverty</a></h3>
+<table id="transactionBasedOperationsRiverity" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Riverity(Invoice)</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup><sup class="footnoteref">[<a class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>Riverity(Installment)</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup><sup class="footnoteref">[<a class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="transactionBasedOperationsSEPAMobile"><a class="anchor" href="#transactionBasedOperationsSEPAMobile"></a><a href="../payment-methods/sepa/" class="page">SEPA</a></h3>
+<table id="transactionBasedOperationsSEPA" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Acquirer</th>
+<th class="tableblock halign-center valign-top" colspan="2">Hobex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Acquirer</strong></p></td>
+<td class="tableblock halign-center valign-top" colspan="2"><p class="tableblock"><strong>b4payment/SEPA Express</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="transactionBasedOperationsSofortMobile"><a class="anchor" href="#transactionBasedOperationsSofortMobile"></a><a href="../payment-methods/sofort/" class="page">Sofort</a></h3>
+<table id="transactionBasedOperationsSofort" class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Acquirer</th>
+<th class="tableblock halign-center valign-top" colspan="2">Klarna</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="7"><p class="tableblock">Transaction-Based Operations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#approveReversal" class="page">APPROVEREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#deposit" class="page">DEPOSIT</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#depositReversal" class="page">DEPOSITREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#getOrderDetails" class="page">GETORDERDETAILS</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#recurPayment" class="page">RECURPAYMENT</a></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">✔<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refund" class="page">REFUND</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><a href="../commands/post-transaction/#refundReversal" class="page">REFUNDREVERSAL</a></code></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. <strong>Partial Capture</strong>-When the payment of a certain amount is authorized, some financial service providers offer a <strong>one-off</strong> deposit of less than the authorized amount. If e.g. the price of the item the consumer ordered is reduced. Not to be confused with a <strong>split capture</strong>.
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. <strong>Split capture</strong>-When the payment of a certain amount is authorized, some financial service providers offer to deposit the total amount not in one single deposit but in multiple smaller deposits. E.g. when shipping only some items of the consumer&#8217;s shopping basket then make deposits for each separate shipping up to the total authorized amount (e.g. 100 authorized, 2×50 deposited). Not to be confused with partial capture.
+</div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. Has to be authorized by the respective financial service provider.
+</div>
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. <strong>One step reversal</strong>-A deposit reversal results in a complete cancellation of the payment and not in the status approved.
+</div>
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. This operation cancels a credit note and can only be done before the corresponding day-end closing has been executed and the financial service provider supports this operation.
+</div>
+<div class="footnote" id="_footnotedef_6">
+<a href="#_footnoteref_6">6</a>. By default, a Paypal payment is automatically captured with full amount. Contact our <strong>integration specialists</strong> team for separating the transaction flow into authorization and capture (Full or partial capture [1]).
+</div>
+<div class="footnote" id="_footnotedef_7">
+<a href="#_footnoteref_7">7</a>. recurPayment is affected as payment method SEPA Direct Debit, i.e. supporting SEPA Direct Debit is must.
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer qenta">
+  <div class="uk-section-secondary uk-section">
+    <div class="uk-container">
+      <div class="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid" uk-grid="">
+        <div class="uk-width-1-3@m uk-first-column">
+          <div class="uk-position-relative uk-margin" style="left: 0px; bottom: 20px;">
+            <a class="el-link" href="#2" uk-scroll=""><img class="el-image" alt="" uk-img=""
+                src="https://payments.qenta.com/wp-content/uploads/2022/06/RZ-Logo-QENTA-CMYK-invertiert-2.svg" width="120"></a>
+          </div> 
+          <div class="uk-panel uk-text-meta uk-position-relative" style="bottom: 20px;">
+            <p>©2023 - QENTA PAYMENT CEE GMBH</p>
+          </div>
+        </div>
+        <div class="uk-width-2-3@m">
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://payments.qenta.com/">COMPANY</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://payments.qenta.com/en/merchant-login/">MERCHANT LOGIN</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://payments.qenta.com/en/payment-solutions/">SOLUTIONS</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://payments.qenta.com/en/contact/">CONTACT</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://guides.qenta.com" target="_blank">ONLINE GUIDES</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://payments.qenta.com/en/download-center/">DOWNLOAD CENTER</a>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-text-right">
+            <ul class="uk-margin-remove-bottom uk-subnav uk-flex-right" uk-margin="">
+              <li class="el-item uk-first-column">
+                <a class="el-link" href="https://payments.qenta.com/en/imprint/">IMPRINT</a>
+              </li>
+              <li class="el-item">
+                <a class="el-link" href="https://guides.qenta.com/protection-personal-data/data-protection-en/">DATA PROTECTION</a>
+              </li> 
+              <li class="el-item">
+                <a class="el-link" href="https://payments.qenta.com/en/terms-and-conditions/">T&C</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/_/js/site.js"></script>
+<script src="/_/js/vendor/lunr.js"></script>
+<script src="/_/js/vendor/search.js" id="search-script" data-base-path="../../../.." data-page-path="/online-guides/main/qtill/command-by-payment-method/"></script>
+<script async src="/search-index.js"></script>
+<script async src="/_/js/vendor/dark-light-theme.js"></script>
+<script async src="/_/js/vendor/highlight.js"></script>
+  </body>
+</html>
