@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.BOT_PAT }}
+          token: ${{ secrets.BOT_PAT2 }}
           submodules: recursive
       - name: Get Branch Name
         shell: bash
@@ -60,4 +60,4 @@ jobs:
       #   env:
       #     BOT_USER: ${{ secrets.BOT_USER }}
       #     BOT_EMAIL: ${{ secrets.BOT_EMAIL }}
-      #     BOT_TOKEN: ${{ secrets.BOT_PAT }}
+      #     BOT_TOKEN: ${{ secrets.BOT_PAT2 }}
